@@ -1,0 +1,1356 @@
+{
+    "p1": {
+        "texto": "Analyze this image of cattle skin inside a circular PVC pipe. Find the precise bounding box of the exposed dark skin patch in the center. Ignore white labels. Return the coordinates as [x1, y1, x2, y2].",
+        "recompensas": []
+    },
+    "p2": {
+        "texto": "Identify the central dark spot (hair or skin) within the circular area. Disregard any alphanumeric tags. Output bounding box format: [x1, y1, x2, y2].",
+        "recompensas": []
+    },
+    "p3": {
+        "texto": "Find the dark skin lesion or hair sample inside the PVC pipe hole. Provide the bounding box coordinates [x1, y1, x2, y2] strictly for the biological sample, ignoring the white background and text.",
+        "recompensas": []
+    },
+    "p4": {
+        "texto": "Detect the central biological specimen (dark skin/hair). Focus only on the circular opening. Do not detect the PVC pipe or the printed text labels. Format: [x1, y1, x2, y2].",
+        "recompensas": []
+    },
+    "p5": {
+        "texto": "Locate the dark region of interest in the center of the image. The object is a cattle skin patch. Return its bounding box [x1, y1, x2, y2].",
+        "recompensas": []
+    },
+    "dinamico_6": {
+        "texto": "find the dark skin patch in the center of the circular area.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_7": {
+        "texto": "find the central dark circular patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_8": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_9": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.2717754322906269
+        ]
+    },
+    "dinamico_10": {
+        "texto": "find the dark skin patch in the center of the circular area.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_11": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_12": {
+        "texto": "find the central dark circular patch with a textured surface.",
+        "recompensas": []
+    },
+    "dinamico_13": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_14": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.19581380716320373
+        ]
+    },
+    "dinamico_15": {
+        "texto": "find the dark skin patch in the center of the oval patch.",
+        "recompensas": [
+            0.23842450682104047
+        ]
+    },
+    "dinamico_16": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_17": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_18": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_19": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.8037515198252267
+        ]
+    },
+    "dinamico_20": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_21": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_22": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_23": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.10279703280550291
+        ]
+    },
+    "dinamico_24": {
+        "texto": "find the central dark skin patch.",
+        "recompensas": []
+    },
+    "dinamico_25": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.4283065742583395
+        ]
+    },
+    "dinamico_26": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.4366404524851819
+        ]
+    },
+    "dinamico_27": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_28": {
+        "texto": "find the dark central biological sample in the center.",
+        "recompensas": []
+    },
+    "dinamico_29": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_30": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_31": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_32": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_33": {
+        "texto": "find the central dark skin patch.",
+        "recompensas": []
+    },
+    "dinamico_34": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.03219631785344317
+        ]
+    },
+    "dinamico_35": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.4270888216653002
+        ]
+    },
+    "dinamico_36": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.1051693368905138
+        ]
+    },
+    "dinamico_37": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_38": {
+        "texto": "find the central dark skin patch.",
+        "recompensas": []
+    },
+    "dinamico_39": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_40": {
+        "texto": "find the central dark skin patch.",
+        "recompensas": []
+    },
+    "dinamico_41": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.297088278987712
+        ]
+    },
+    "dinamico_42": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.24987268694791348
+        ]
+    },
+    "dinamico_43": {
+        "texto": "find the dark skin patch in the center of the circular patch.",
+        "recompensas": [
+            0.02757870358875273
+        ]
+    },
+    "dinamico_44": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_45": {
+        "texto": "find the central dark skin patch.",
+        "recompensas": []
+    },
+    "dinamico_46": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.030840756516861974
+        ]
+    },
+    "dinamico_47": {
+        "texto": "find the dark skin patch in the center of the pvc pipe.",
+        "recompensas": []
+    },
+    "dinamico_48": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_49": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.16004504222927562
+        ]
+    },
+    "dinamico_50": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_51": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.0980028096411732
+        ]
+    },
+    "dinamico_52": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_53": {
+        "texto": "find the central dark skin patch.",
+        "recompensas": [
+            0.2579888755589486
+        ]
+    },
+    "dinamico_54": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_55": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.05686427661319882
+        ]
+    },
+    "dinamico_56": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.7627537430606179
+        ]
+    },
+    "dinamico_57": {
+        "texto": "find the dark skin patch in the center of the image.",
+        "recompensas": []
+    },
+    "dinamico_58": {
+        "texto": "find the dark skin patch in the center of the image.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_59": {
+        "texto": "find the dark skin patch in the center of the circular area.",
+        "recompensas": [
+            0.014353606255805135
+        ]
+    },
+    "dinamico_60": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.1401219221469196
+        ]
+    },
+    "dinamico_61": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.3173056191269019
+        ]
+    },
+    "dinamico_62": {
+        "texto": "find the dark skin patch in the center of the image.",
+        "recompensas": [
+            0.003890016693505065
+        ]
+    },
+    "dinamico_63": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.08700411743983878
+        ]
+    },
+    "dinamico_64": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.35824013490875195
+        ]
+    },
+    "dinamico_65": {
+        "texto": "find the dark skin patch in the center of the image.",
+        "recompensas": [
+            0.24753651524706768
+        ]
+    },
+    "dinamico_66": {
+        "texto": "find the central dark skin patch with hair.",
+        "recompensas": []
+    },
+    "dinamico_67": {
+        "texto": "find the dark skin patch in the center of the oval area.",
+        "recompensas": [
+            0.19734889821781995
+        ]
+    },
+    "dinamico_68": {
+        "texto": "find the central dark skin patch.",
+        "recompensas": []
+    },
+    "dinamico_69": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_70": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_71": {
+        "texto": "find the central dark circular patch with a textured surface.",
+        "recompensas": []
+    },
+    "dinamico_72": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.00617267971291027
+        ]
+    },
+    "dinamico_73": {
+        "texto": "find the dark skin patch in the center of the circular area.",
+        "recompensas": [
+            0.10854717235023793
+        ]
+    },
+    "dinamico_74": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.3667496697128176
+        ]
+    },
+    "dinamico_75": {
+        "texto": "find the central dark circular patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_76": {
+        "texto": "find the dark skin patch in the center of the image.",
+        "recompensas": []
+    },
+    "dinamico_77": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.10248573774112489
+        ]
+    },
+    "dinamico_78": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_79": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_80": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_81": {
+        "texto": "find the dark central patch in the center of the image.",
+        "recompensas": [
+            0.28098707942424683
+        ]
+    },
+    "dinamico_82": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_83": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_84": {
+        "texto": "find the central dark skin patch with hair.",
+        "recompensas": []
+    },
+    "dinamico_85": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_86": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_87": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.31260957646812654
+        ]
+    },
+    "dinamico_88": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_89": {
+        "texto": "find the dark skin patch in the center of the pvc pipe.",
+        "recompensas": []
+    },
+    "dinamico_90": {
+        "texto": "find the dark skin patch in the center of the pvc pipe.",
+        "recompensas": []
+    },
+    "dinamico_91": {
+        "texto": "find the central dark circular patch.",
+        "recompensas": []
+    },
+    "dinamico_92": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_93": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_94": {
+        "texto": "find the central dark patch in the center of the image.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_95": {
+        "texto": "find the central dark patch in the center of the image.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_96": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_97": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": [
+            0.13910103718918415
+        ]
+    },
+    "dinamico_98": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_99": {
+        "texto": "find the central dark patch with a white label.",
+        "recompensas": []
+    },
+    "dinamico_100": {
+        "texto": "find the central dark patch in the center of the image.",
+        "recompensas": [
+            0.40745235881027064
+        ]
+    },
+    "dinamico_101": {
+        "texto": "find the dark central biological sample in the center.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_102": {
+        "texto": "find the central dark circular patch with a label.",
+        "recompensas": []
+    },
+    "dinamico_103": {
+        "texto": "find the central dark biological sample (skin/hair) with a white label.",
+        "recompensas": []
+    },
+    "dinamico_104": {
+        "texto": "find the central dark patch in the center.",
+        "recompensas": [
+            0.1317259593734406
+        ]
+    },
+    "dinamico_105": {
+        "texto": "find the central dark biological sample (skin/hair) with a label.",
+        "recompensas": []
+    },
+    "dinamico_106": {
+        "texto": "find the dark skin patch in the center of the circular patch.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_107": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_108": {
+        "texto": "find the dark central biological sample in the center.",
+        "recompensas": [
+            0.36544199514308573
+        ]
+    },
+    "dinamico_109": {
+        "texto": "find the central dark skin patch.",
+        "recompensas": []
+    },
+    "dinamico_110": {
+        "texto": "find the dark skin patch in the center of the oval patch.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_111": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.22302105494827965
+        ]
+    },
+    "dinamico_112": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_113": {
+        "texto": "find the dark skin patch in the center of the pvc pipe.",
+        "recompensas": []
+    },
+    "dinamico_114": {
+        "texto": "find the central dark skin patch.",
+        "recompensas": []
+    },
+    "dinamico_115": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_116": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.09915747991370964
+        ]
+    },
+    "dinamico_117": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_118": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.23266552929379192
+        ]
+    },
+    "dinamico_119": {
+        "texto": "find the central dark patch with a label.",
+        "recompensas": []
+    },
+    "dinamico_120": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_121": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_122": {
+        "texto": "find the dark central patch in the center.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_123": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_124": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.2769071218864363
+        ]
+    },
+    "dinamico_125": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_126": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_127": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_128": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_129": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_130": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_131": {
+        "texto": "find the dark central biological sample in the center.",
+        "recompensas": [
+            0.36190680366302674
+        ]
+    },
+    "dinamico_132": {
+        "texto": "find the dark skin patch in the center of the oval patch.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_133": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_134": {
+        "texto": "find the central dark patch in the center.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_135": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_136": {
+        "texto": "find the dark skin patch in the center of the oval patch.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_137": {
+        "texto": "find the central dark circular patch with a label inside the pvc pipe.",
+        "recompensas": []
+    },
+    "dinamico_138": {
+        "texto": "find the central dark patch with a light background.",
+        "recompensas": []
+    },
+    "dinamico_139": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": [
+            0.01868641419327046
+        ]
+    },
+    "dinamico_140": {
+        "texto": "find the dark skin patch in the center of the oval patch.",
+        "recompensas": [
+            0.20776627263026748
+        ]
+    },
+    "dinamico_141": {
+        "texto": "find the central dark patch in the center of the image.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_142": {
+        "texto": "find the central dark patch in the center of the image.",
+        "recompensas": [
+            0.03359167441323205
+        ]
+    },
+    "dinamico_143": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_144": {
+        "texto": "find the dark central biological sample in the center.",
+        "recompensas": [
+            0.21372848953592935
+        ]
+    },
+    "dinamico_145": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_146": {
+        "texto": "find the central dark biological sample (skin/hair) in the center.",
+        "recompensas": []
+    },
+    "dinamico_147": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_148": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_149": {
+        "texto": "find the central dark patch in the center.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_150": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_151": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_152": {
+        "texto": "find the dark skin patch in the center of the pvc pipe.",
+        "recompensas": []
+    },
+    "dinamico_153": {
+        "texto": "find the central dark skin patch with a label.",
+        "recompensas": []
+    },
+    "dinamico_154": {
+        "texto": "find the dark central biological sample in the center.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_155": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_156": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_157": {
+        "texto": "find the central dark patch in the center of the image.",
+        "recompensas": [
+            1.0
+        ]
+    },
+    "dinamico_158": {
+        "texto": "find the central dark patch with a light patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_159": {
+        "texto": "find the central dark patch in the center of the image.",
+        "recompensas": [
+            0.11290419962221514
+        ]
+    },
+    "dinamico_160": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_161": {
+        "texto": "find the dark skin patch in the center of the oval patch.",
+        "recompensas": [
+            0.9227259301508408
+        ]
+    },
+    "dinamico_162": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.0005796249905711689
+        ]
+    },
+    "dinamico_163": {
+        "texto": "find the dark skin patch in the center of the circular patch.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_164": {
+        "texto": "find the dark skin patch in the center of the circular patch.",
+        "recompensas": [
+            0.141291139369226
+        ]
+    },
+    "dinamico_165": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.1946809222355096
+        ]
+    },
+    "dinamico_166": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_167": {
+        "texto": "find the central dark patch in the center.",
+        "recompensas": [
+            0.4821110969291899
+        ]
+    },
+    "dinamico_168": {
+        "texto": "find the central dark biological sample (skin/hair) with a white label.",
+        "recompensas": []
+    },
+    "dinamico_169": {
+        "texto": "find the central dark biological sample (skin/hair) with the label 2426.",
+        "recompensas": []
+    },
+    "dinamico_170": {
+        "texto": "find the central dark patch with a light-colored border.",
+        "recompensas": []
+    },
+    "dinamico_171": {
+        "texto": "find the dark central biological sample in the center.",
+        "recompensas": [
+            0.7242083543877379
+        ]
+    },
+    "dinamico_172": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.6970743789469878
+        ]
+    },
+    "dinamico_173": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_174": {
+        "texto": "find the central dark patch with the label 2371 inside the pvc pipe.",
+        "recompensas": []
+    },
+    "dinamico_175": {
+        "texto": "find the dark skin patch in the center of the pvc pipe.",
+        "recompensas": []
+    },
+    "dinamico_176": {
+        "texto": "find the dark central biological sample in the center.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_177": {
+        "texto": "find the dark skin patch in the center of the oval.",
+        "recompensas": [
+            0.4892032977870113
+        ]
+    },
+    "dinamico_178": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_179": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_180": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.0012017916415833162
+        ]
+    },
+    "dinamico_181": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_182": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.9118373117745054
+        ]
+    },
+    "dinamico_183": {
+        "texto": "find the central dark skin patch.",
+        "recompensas": []
+    },
+    "dinamico_184": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.21862082779467196
+        ]
+    },
+    "dinamico_185": {
+        "texto": "find the dark central patch in the center of the image.",
+        "recompensas": [
+            0.0717084546568466
+        ]
+    },
+    "dinamico_186": {
+        "texto": "find the dark central biological sample in the center.",
+        "recompensas": [
+            0.12077282096378986
+        ]
+    },
+    "dinamico_187": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_188": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_189": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_190": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_191": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_192": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_193": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_194": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_195": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_196": {
+        "texto": "find the central dark patch in the center of the image.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_197": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": [
+            0.12626816469644017
+        ]
+    },
+    "dinamico_198": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_199": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_200": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_201": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.11858779444383905
+        ]
+    },
+    "dinamico_202": {
+        "texto": "find the dark skin patch in the center of the oval patch.",
+        "recompensas": [
+            0.1311427303030075
+        ]
+    },
+    "dinamico_203": {
+        "texto": "find the central dark skin patch.",
+        "recompensas": []
+    },
+    "dinamico_204": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_205": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": [
+            0.1609112707680908
+        ]
+    },
+    "dinamico_206": {
+        "texto": "find the dark skin patch in the center of the oval patch.",
+        "recompensas": [
+            0.058446268228732286
+        ]
+    },
+    "dinamico_207": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_208": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.05586505812104893
+        ]
+    },
+    "dinamico_209": {
+        "texto": "find the dark central biological sample in the center.",
+        "recompensas": [
+            0.44910430934938816
+        ]
+    },
+    "dinamico_210": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_211": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": [
+            0.047605484167159415
+        ]
+    },
+    "dinamico_212": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.21275745796639553
+        ]
+    },
+    "dinamico_213": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_214": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_215": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_216": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_217": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.18415636862453166
+        ]
+    },
+    "dinamico_218": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_219": {
+        "texto": "find the dark skin patch in the center of the oval patch.",
+        "recompensas": [
+            0.11361582599428423
+        ]
+    },
+    "dinamico_220": {
+        "texto": "find the dark skin patch in the center of the pvc pipe.",
+        "recompensas": [
+            0.18797901145803056
+        ]
+    },
+    "dinamico_221": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_222": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_223": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.24996258747272235
+        ]
+    },
+    "dinamico_224": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_225": {
+        "texto": "find the dark central patch in the center of the image.",
+        "recompensas": [
+            0.05888509211040639
+        ]
+    },
+    "dinamico_226": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.19110540110128005
+        ]
+    },
+    "dinamico_227": {
+        "texto": "find the dark skin patch in the center of the pvc pipe.",
+        "recompensas": []
+    },
+    "dinamico_228": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_229": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.552832233794777
+        ]
+    },
+    "dinamico_230": {
+        "texto": "find the dark skin patch in the center of the oval patch.",
+        "recompensas": [
+            0.4583174439783567
+        ]
+    },
+    "dinamico_231": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_232": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.698465328328673
+        ]
+    },
+    "dinamico_233": {
+        "texto": "find the dark central skin patch.",
+        "recompensas": [
+            0.30314423152522746
+        ]
+    },
+    "dinamico_234": {
+        "texto": "find the dark skin patch in the center of the oval patch.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_235": {
+        "texto": "find the central dark biological sample (skin/hair) in the center.",
+        "recompensas": [
+            0.2451674605258223
+        ]
+    },
+    "dinamico_236": {
+        "texto": "find the dark skin patch in the center of the oval.",
+        "recompensas": [
+            0.27086567790455596
+        ]
+    },
+    "dinamico_237": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": [
+            0.10332281603339319
+        ]
+    },
+    "dinamico_238": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_239": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_240": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_241": {
+        "texto": "find the dark skin patch in the center of the circular patch.",
+        "recompensas": [
+            0.10277809929600638
+        ]
+    },
+    "dinamico_242": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": [
+            0.04950450693999243
+        ]
+    },
+    "dinamico_243": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_244": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_245": {
+        "texto": "find the dark central patch in the center of the image.",
+        "recompensas": [
+            0.2346417203006194
+        ]
+    },
+    "dinamico_246": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.030684917408531878
+        ]
+    },
+    "dinamico_247": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.12640490936985055
+        ]
+    },
+    "dinamico_248": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_249": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_250": {
+        "texto": "find the central dark patch with a white label.",
+        "recompensas": []
+    },
+    "dinamico_251": {
+        "texto": "find the central dark circular patch with a label.",
+        "recompensas": []
+    },
+    "dinamico_252": {
+        "texto": "find the central dark circular patch with a label.",
+        "recompensas": []
+    },
+    "dinamico_253": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_254": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_255": {
+        "texto": "find the central dark patch in the center of the image.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_256": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_257": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_258": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_259": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.29781113370727447
+        ]
+    },
+    "dinamico_260": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_261": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": [
+            0.4557387872403431
+        ]
+    },
+    "dinamico_262": {
+        "texto": "find the central dark biological sample in the center.",
+        "recompensas": [
+            0.016826207092484568
+        ]
+    },
+    "dinamico_263": {
+        "texto": "find the central dark skin patch in the center.",
+        "recompensas": []
+    },
+    "dinamico_264": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": [
+            0.13906126443850977
+        ]
+    },
+    "dinamico_265": {
+        "texto": "find the central dark biological sample (skin/hair) with a label.",
+        "recompensas": []
+    },
+    "dinamico_266": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_267": {
+        "texto": "find the central dark circular patch with a label.",
+        "recompensas": []
+    },
+    "dinamico_268": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_269": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": []
+    },
+    "dinamico_270": {
+        "texto": "find the central dark patch in the center of the image.",
+        "recompensas": [
+            0.0
+        ]
+    },
+    "dinamico_271": {
+        "texto": "find the central dark biological sample (skin/hair)",
+        "recompensas": [
+            0.24696251243099895
+        ]
+    },
+    "p272": {
+        "texto": "Identify and highlight the central dark region of the cattle skin/hair patch, excluding any white alphanumeric labels.",
+        "recompensas": []
+    }
+}

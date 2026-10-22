@@ -1,0 +1,124 @@
+eu preciso de um txt falando do que foi feito no /media/workstation_2x_3080/HD 1TB/Famez_yolo/Colorímetro/VisionReasoner_PromptLearning.ipynb
+
+juntamente com o /media/workstation_2x_3080/HD 1TB/Famez_yolo/Colorímetro/anotador_rl.py
+
+para fazer o pré-processamento inteligente do aplicativo.
+
+Para conseguir treinar o modelo 
+
+=======================================================
+      RESULTADOS FINAIS (FOTO vs EQUIPAMENTO)      
+=======================================================
+Diferença Média L* (Luminosidade): ± 10.80
+Diferença Média a* (Verde-Vermelho): ± 1.45
+Diferença Média b* (Azul-Amarelo): ± 4.43
+-------------------------------------------------------
+Delta E Médio (Distância Geral de Cor): 12.11
+=======================================================
+
+Amostra dos dados comparados:
+  Animal Tipo_Amostra  L_img_convertido  L_Colorimetro     Erro_L    Delta_E
+0   2383         pelo         66.274510          70.34   4.065490   7.802840
+1   2419         pelo         48.235294          69.44  21.204706  22.832609
+2   2341         pele         28.235294          30.03   1.794706   4.279050
+3   2415         pele         23.529412          26.97   3.440588   4.134362
+4   2353         pelo         54.509804          72.34  17.830196  18.826216
+
+=======================================================
+             ESTATÍSTICA DESCRITIVA                     
+=======================================================
+--- PELE ---
+        mean       std    min    max
+L  28.297176  2.209614  23.13  37.14
+a   1.978321  2.221843  -1.38   9.42
+b   4.972061  1.701878   2.18  13.70
+
+--- PELO ---
+        mean       std    min    max
+L  68.534122  6.108404  27.89  76.91
+a   0.139542  2.334695  -3.13   6.53
+b  12.519084  2.286948   6.77  19.99
+
+3. Iniciando Clusterização Global do Dataset...
+ -> K-Means finalizou o agrupamento em 9 Famílias.
+
+4. Calibrando Extra Trees usando K-Means...
+ -> Treino com 37 animais.
+ -> Teste 504 amostras de 10 animais DESCONHECIDOS.
+
+=======================================================
+             MÉTRICAS DE AVALIAÇÃO (CONJUNTO DE TESTE) 
+=======================================================
+Erro Médio Absoluto (MAE): L*=2.403 | a*=1.237 | b*=1.021
+Coeficiente de Determinação (R2): L*=0.971 | a*=0.505 | b*=0.895
+Raiz do Erro Quadrático Médio (RMSE): L*=3.508 | a*=1.690 | b*=1.376
+Coeficiente de Correlação (r): L*=0.985 | a*=0.716 | b*=0.947
+Diferença de Cor (Delta E) Médio: 3.263
+
+--- ANÁLISE DE BLAND-ALTMAN ---
+L* -> Viés: -0.084 | Limites de Concordância 95%: (-6.958, 6.790)
+a* -> Viés: 0.120 | Limites de Concordância 95%: (-3.183, 3.424)
+b* -> Viés: 0.145 | Limites de Concordância 95%: (-2.536, 2.826)
+=======================================================
+
+3. Iniciando Treinamento da Inteligência Artificial...RANDAM FOREST
+ -> Ensinando a IA com 1854 amostras de 37 animais.
+ -> Testando a IA com 504 amostras de 10 animais DESCONHECIDOS.
+
+=======================================================
+             MÉTRICAS DE AVALIAÇÃO (CONJUNTO DE TESTE) 
+=======================================================
+Erro Médio Absoluto (MAE): L*=2.381 | a*=1.236 | b*=1.010
+Coeficiente de Determinação (R2): L*=0.972 | a*=0.508 | b*=0.894
+Raiz do Erro Quadrático Médio (RMSE): L*=3.427 | a*=1.684 | b*=1.381
+Coeficiente de Correlação (r): L*=0.986 | a*=0.717 | b*=0.947
+Diferença de Cor (Delta E) Médio: 3.235
+
+--- ANÁLISE DE BLAND-ALTMAN ---
+L* -> Viés: -0.146 | Limites de Concordância 95%: (-6.858, 6.565)
+a* -> Viés: 0.090 | Limites de Concordância 95%: (-3.205, 3.386)
+b* -> Viés: 0.155 | Limites de Concordância 95%: (-2.536, 2.845)
+=======================================================
+
+
+3. Iniciando Treinamento da Inteligência Artificial (Extra Trees)...
+ -> Ensinando a IA com 1854 amostras de 37 animais.
+ -> Testando a IA com 504 amostras de 10 animais DESCONHECIDOS.
+
+=======================================================
+             MÉTRICAS DE AVALIAÇÃO (CONJUNTO DE TESTE) 
+=======================================================
+Erro Médio Absoluto (MAE): L*=2.406 | a*=1.242 | b*=1.021
+Coeficiente de Determinação (R2): L*=0.970 | a*=0.493 | b*=0.892
+Raiz do Erro Quadrático Médio (RMSE): L*=3.521 | a*=1.709 | b*=1.396
+Coeficiente de Correlação (r): L*=0.985 | a*=0.709 | b*=0.946
+Diferença de Cor (Delta E) Médio: 3.271
+
+--- ANÁLISE DE BLAND-ALTMAN ---
+L* -> Viés: -0.133 | Limites de Concordância 95%: (-7.030, 6.764)
+a* -> Viés: 0.114 | Limites de Concordância 95%: (-3.229, 3.457)
+b* -> Viés: 0.171 | Limites de Concordância 95%: (-2.544, 2.886)
+=======================================================
+
+
+-> Treinando especialista L*...
+ -> Treinando especialista a*...
+ -> Treinando especialista b*...
+
+=======================================================
+             MÉTRICAS DE AVALIAÇÃO (CONJUNTO DE TESTE) XGBRegressor
+=======================================================
+Erro Médio Absoluto (MAE): L*=2.664 | a*=1.350 | b*=1.135
+Coeficiente de Determinação (R2): L*=0.961 | a*=0.356 | b*=0.863
+Raiz do Erro Quadrático Médio (RMSE): L*=4.014 | a*=1.926 | b*=1.570
+Coeficiente de Correlação (r): L*=0.981 | a*=0.642 | b*=0.930
+Diferença de Cor (Delta E) Médio: 3.648
+
+--- ANÁLISE DE BLAND-ALTMAN ---
+L* -> Viés: -0.274 | Limites de Concordância 95%: (-8.124, 7.576)
+a* -> Viés: 0.127 | Limites de Concordância 95%: (-3.640, 3.894)
+b* -> Viés: 0.139 | Limites de Concordância 95%: (-2.925, 3.203)
+=======================================================
+
+
+

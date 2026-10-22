@@ -1,0 +1,16 @@
+Metodologia de Pré-Processamento Inteligente (Prompt Learning + Reinforcement Learning)
+
+Para superar as limitações do pré-processamento clássico baseado em limiarização de cores (OpenCV), que apresenta falhas diante de variações de iluminação e diferentes padrões de pelagem, desenvolveu-se uma arquitetura de pré-processamento inteligente. Essa nova abordagem utiliza Modelos de Linguagem e Visão (Vision-Language Models - VLMs) otimizados ativamente através de Aprendizado por Reforço com Feedback Humano (RLHF).
+
+A arquitetura do pipeline consiste em três módulos principais:
+
+1. Inferência e Prompt Learning Dinâmico (VisionReasoner_PromptLearning.ipynb)
+Foi instanciado um modelo fundacional de visão e linguagem (VisionReasoner) para atuar como detector zero-shot das amostras. Ao invés de depender de um único comando (prompt) estático que poderia ser mal interpretado pelo modelo, implementou-se um algoritmo evolutivo de Prompt Learning. O sistema mantém um conjunto ("pool") de prompts descritivos concorrentes. Para cada imagem, o modelo gera caixas delimitadoras (bounding boxes) da área de interesse (manchas na pele e no pelame) com base nesses prompts. 
+
+2. Validação Visual e Atribuição de Recompensa (anotador_rl.py)
+As predições geradas pelo VLM são submetidas a uma interface de revisão humana (Anotador RL). Através desta ferramenta visual, o especialista inspeciona o recorte sugerido pelo modelo. Caso a caixa delimitadora esteja imprecisa, o usuário pode ajustá-la manualmente (gerando as 'gt_coords' - Ground Truth). O sistema então calcula a Intersecção sobre União (IoU) entre a predição original do modelo e o ajuste do especialista. Esse valor de IoU atua como o "Sinal de Recompensa" (Reward), quantificando a eficácia do prompt que originou aquela predição. Toda essa inteligência é persistida estruturalmente no arquivo `rl_feedback.json`.
+
+3. Mutação Evolutiva e Extração de Features
+As recompensas obtidas são realimentadas no notebook do VisionReasoner. Prompts que obtiveram pontuações altas (high rewards) são preservados e sofrem mutações semânticas (usando o próprio raciocínio do modelo fundacional) para gerar novas variações ainda mais especializadas. Prompts com baixa performance são descartados. Este ciclo cria uma IA que "aprende a observar" iterativamente a característica de interesse sem necessidade de re-treinamento de pesos convolucionais profundos (Zero-Shot Evolution).
+
+Por fim, no módulo estatístico (Colorimetro_Clean.ipynb), o algoritmo cruza a imagem original com o `rl_feedback.json`, recortando as amostras com precisão milimétrica e aplicando um Grid Multicanal 3x3. Essa extração de features altamente purificada reduz drasticamente o ruído dos dados de entrada (Sinal-Ruído), permitindo que os modelos regressores (como Random Forest e XGBoost) atinjam níveis de Erro Absoluto e Delta E muito inferiores aos métodos tradicionais de visão computacional.

@@ -1,0 +1,115 @@
+import json
+
+notebook_path = '/media/workstation_2x_3080/HD 1TB/Famez_yolo/Colorímetro/VisionReasoner_PromptLearning.ipynb'
+
+with open(notebook_path, 'r', encoding='utf-8') as f:
+    nb = json.load(f)
+
+nova_celula = [
+    "# ==========================================\n",
+    "# 3. EXTRAÇÃO VIA PROMPT LEARNING\n",
+    "# ==========================================\n",
+    "def carregar_feedback():\n",
+    "    if os.path.exists(ARQUIVO_FEEDBACK):\n",
+    "        with open(ARQUIVO_FEEDBACK, 'r') as f:\n",
+    "            return json.load(f)\n",
+    "    return {}\n",
+    "\n",
+    "def salvar_feedback(dados):\n",
+    "    with open(ARQUIVO_FEEDBACK, 'w') as f:\n",
+    "        json.dump(dados, f, indent=4)\n",
+    "\n",
+    "def pedir_bbox_vlm(image_path, prompt_text):\n",
+    "    from PIL import Image\n",
+    "    import re\n",
+    "    image = Image.open(image_path).convert('RGB')\n",
+    "    result = model.detect_objects(image, prompt_text)\n",
+    "    if result and 'bboxes' in result and len(result['bboxes']) > 0:\n",
+    "        return tuple(result['bboxes'][0])\n",
+    "    \n",
+    "    # Fallback:\n",
+    "    resposta_texto = result.get('full_response', '')\n",
+    "    try:\n",
+    "        numeros = re.findall(r'\\d+', resposta_texto)\n",
+    "        if len(numeros) >= 4:\n",
+    "            return tuple(map(int, numeros[:4]))\n",
+    "    except Exception as e:\n",
+    "        print(f\"Falha ao parsear resposta: {resposta_texto}\")\n",
+    "    return None\n",
+    "\n",
+    "def gerar_prompt_adaptativo(image_path, historico_pool):\n",
+    "    from PIL import Image\n",
+    "    import numpy as np\n",
+    "    image = Image.open(image_path).convert('RGB')\n",
+    "    \n",
+    "    boas_dicas = []\n",
+    "    for pid, data in historico_pool.items():\n",
+    "        if data['recompensas']:\n",
+    "            media = np.mean(data['recompensas'])\n",
+    "            if media > 0.5:\n",
+    "                boas_dicas.append(data['texto'])\n",
+    "                \n",
+    "    dicas_str = \"\\n- \".join(boas_dicas[-3:])\n",
+    "    if not dicas_str:\n",
+    "        dicas_str = \"Find the dark skin patch in the center.\"\n",
+    "        \n",
+    "    meta_prompt = f\"\"\"You are an AI optimization assistant.\n",
+    "Analyze this image of a cattle skin patch inside a PVC pipe.\n",
+    "We want to detect the central dark biological sample (skin/hair).\n",
+    "Here are some queries that worked well recently:\n",
+    "- {dicas_str}\n\n",
+    "Based on this image and the successful history, generate a NEW, perfectly adapted object detection query to find the target in THIS specific image. Return ONLY the new query text.\"\"\"\n",
+    "\n",
+    "    result = model.answer_question(image, meta_prompt)\n",
+    "    novo_prompt = result.get('answer', dicas_str.split('\\n')[0].replace('- ', '')).strip()\n",
+    "    novo_prompt = novo_prompt.replace('\"', '').replace(\"'\", \"\")\n",
+    "    return novo_prompt\n",
+    "\n",
+    "prompts_pool = carregar_prompts()\n",
+    "feedback = carregar_feedback()\n",
+    "\n",
+    "todas_as_fotos = []\n",
+    "for pasta in caminhos_fotos:\n",
+    "    if not os.path.exists(pasta): continue\n",
+    "    for f in os.listdir(pasta):\n",
+    "        if f.lower().endswith(('.jpg', '.png')):\n",
+    "            todas_as_fotos.append(os.path.join(pasta, f))\n",
+    "\n",
+    "print(f\"Testando predições em {len(todas_as_fotos)} imagens...\")\n",
+    "\n",
+    "for caminho_img in tqdm(todas_as_fotos):\n",
+    "    nome_arquivo = os.path.basename(caminho_img)\n",
+    "    if nome_arquivo in feedback: continue\n",
+    "        \n",
+    "    prompt_dinamico = gerar_prompt_adaptativo(caminho_img, prompts_pool)\n",
+    "    \n",
+    "    pid = f\"dinamico_{len(prompts_pool) + 1}\"\n",
+    "    prompts_pool[pid] = {'texto': prompt_dinamico, 'recompensas': []}\n",
+    "    salvar_prompts(prompts_pool)\n",
+    "    \n",
+    "    bbox_predito = pedir_bbox_vlm(caminho_img, prompt_dinamico)\n",
+    "    \n",
+    "    if bbox_predito:\n",
+    "        feedback[nome_arquivo] = {\n",
+    "            'auto_coords': bbox_predito,\n",
+    "            'prompt_id': pid,\n",
+    "            'prompt_text': prompt_dinamico,\n",
+    "            'status_auto': 'VISION_REASONER_RL',\n",
+    "            'reward': None\n",
+    "        }\n",
+    "        salvar_feedback(feedback)\n",
+    "        \n",
+    "print(\"Previsões do Lote finalizadas. Use o anotador_rl.py agora!\")"
+]
+
+for cell in nb['cells']:
+    if cell['cell_type'] == 'code':
+        source = cell['source']
+        if any("def pedir_bbox_vlm" in line for line in source) and any("def carregar_feedback" in line for line in source):
+            cell['source'] = nova_celula
+            break
+
+with open(notebook_path, 'w', encoding='utf-8') as f:
+    json.dump(nb, f, indent=1, ensure_ascii=False)
+
+print("Notebook updated with dynamic prompt generation per image.")

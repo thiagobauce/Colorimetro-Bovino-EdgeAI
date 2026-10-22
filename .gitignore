@@ -1,0 +1,52 @@
+# ==========================================
+# Git Ignore - Colorímetro Bovino
+# ==========================================
+
+# Ambientes virtuais e pacotes Python
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Arquivos temporários de IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.~lock.*
+.DS_Store
+
+# Arquivos de log e execução temporária
+*.log
+run_log.txt
+pipeline_log.json
+rl_feedback.json
+
+# Dados pesados de imagens brutas (disponíveis sob solicitação ou Zenodo)
+fotos colorímetro-dezembro-2025/
+Fotos colorímetro- fevereiro-2026/
+Foto colorimetro-Julho2026/
+Amostras_Sincronizadas_YOLO/
+Amostras_Mancha/
+Dataset_RL/
+
+# Arquivos binários pesados de pesos e arrays temporários
+*.pkl
+*.pt
+calibration_image_sample_data_*.npy
+
+# Arquivos de áudio/mídia pessoal
+*.ogg
+*.mp3
+*.wav
+
+# Manter modelos exportados ONNX leves para demonstração de inferência
+!*.onnx

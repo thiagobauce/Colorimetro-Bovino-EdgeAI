@@ -1,0 +1,21 @@
+# Resumo do Pré-Processamento Inteligente (Pipeline RL)
+
+Este documento descreve o fluxo de pré-processamento inteligente desenvolvido para o aplicativo do Colorímetro, integrando o `anotador_rl.py` e o `VisionReasoner_PromptLearning.ipynb` para a geração autônoma e otimização de dados de treinamento.
+
+## 1. Coleta de Ground Truth Manual (`anotador_rl.py`)
+O `anotador_rl.py` atua como a interface humana no loop de aprendizado por reforço (RL). Suas principais funções no pré-processamento são:
+- **Anotação de Precisão:** Permite que o especialista anote manualmente amostras de pele e pelo, ajustando bounding boxes ou vértices para isolar a área de interesse com alta acurácia (excluindo bordas do colorímetro ou reflexos).
+- **Geração de Feedback (Recompensa):** As marcações feitas geram um "Ground Truth" (verdade absoluta) que será usado para calcular as métricas de acurácia (como IoU e OKS - Object Keypoint Similarity).
+- **Sincronização:** Garante que cada amostra anotada de pele tenha sua correspondente de pelo da mesma área da carcaça do animal, mantendo o alinhamento das coordenadas espacialmente para a regressão final.
+
+## 2. Otimização de Prompts e Extração Autônoma (`VisionReasoner_PromptLearning.ipynb`)
+O notebook `VisionReasoner_PromptLearning.ipynb` é o motor inteligente do pré-processamento. Ele utiliza os dados gerados pelo anotador para automatizar o processo para as demais imagens, através das seguintes etapas:
+- **Prompt Learning Evolutivo (RL):** O VisionReasoner recebe prompts iniciais para detectar pele e pelo. O modelo gera predições (bounding boxes/pontos) e essas predições são comparadas com o Ground Truth do `anotador_rl.py`. Se o IoU for baixo, um modelo de linguagem (LLM) atua como "mutador", reescrevendo o prompt de visão para ser mais específico (ex: "foque apenas na área interna do disco transparente").
+- **Segmentação e Calibração:** Após encontrar o melhor prompt, o pipeline faz a detecção de pontos de interesse (pelos/pele), calcula a área dos spots e usa os marcadores de calibração para garantir a escala correta da imagem capturada pelo celular.
+- **Exportação de Patches (Crops):** As regiões de interesse detectadas corretamente são automaticamente recortadas em patches de alta qualidade e salvas em diretórios padronizados.
+
+## 3. Preparação para o Treinamento do Modelo Mobile
+O objetivo final da união desses dois scripts é gerar um Dataset Perfeito e escalável para o aplicativo mobile:
+- Os patches limpos extraídos pelo notebook (validados pela lógica do anotador) formam a base de dados de treinamento para o modelo final.
+- O modelo mobile (seja um YOLO v8 miniaturizado ou ONNX) será treinado apenas nestes recortes exatos, aprendendo a ignorar a estrutura do colorímetro e focar nas propriedades colorimétricas do pelo e da pele do bovino.
+- Isso garante que o pré-processamento em tempo real no aplicativo seja leve, rápido e tenha alta precisão sem precisar rodar modelos gigantes na borda.

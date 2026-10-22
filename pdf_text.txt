@@ -1,0 +1,698 @@
+UNIVERSIDADE FEDERAL DE MATO GROSSO DO SUL
+Faculdade de Medicina Veterinária e Zootecnia
+Discente: Camila de Godoy Souza
+Orientadora: Marina de Nadai Bonin Gomes
+
+TÍTULO
+
+Campo Grande/MS
+2026
+
+Resumo:
+
+Palavras-chave:
+
+INTRODUÇÃO
+O Brasil detém o maior rebanho comercial de bovinos do mundo, com
+aproximadamente 224,6 milhões de cabeças (FERREIRA DOS SANTOS et al.,
+2025). Grande parte dessa produção é conduzida em sistemas extensivos
+(MOLOSSI et al., 2023), com maior concentração no bioma Cerrado (VILELA
+FERREIRA et al., 2020), onde os animais permanecem expostos às condições
+ambientais. Embora esse sistema apresente vantagens econômicas e produtivas,
+torna os rebanhos suscetíveis aos efeitos das mudanças climáticas, especialmente
+em razão do aumento da temperatura média global e da maior frequência de
+eventos extremos de calor. Essas condições intensificam o estresse térmico,
+comprometendo o bem-estar animal, o desempenho produtivo e reprodutivo e,
+consequentemente,
+
+a
+
+sustentabilidade
+
+dos
+
+sistemas
+
+de
+
+produção
+
+animal
+
+(THORNTON et al., 2021; NORTH et al., 2023).
+Nesse contexto, a capacidade dos bovinos de manter o equilíbrio térmico é
+determinante para sua adaptação e desempenho em ambientes tropicais. Entre os
+principais mecanismos envolvidos nesse processo destacam-se as características
+morfológicas do revestimento corporal. Embora a raça Nelore apresente elevada
+rusticidade e adaptação ao clima tropical, diferenças individuais na resposta ao
+estresse térmico evidenciam que a eficiência da termorregulação depende da
+interação entre fatores fisiológicos e morfológicos. A cor da pele e do pelame
+influencia diretamente a absorção da radiação solar: enquanto a pigmentação da
+pele protege contra a radiação ultravioleta, a coloração do pelame determina a
+quantidade de energia absorvida e, consequentemente, a temperatura superficial do
+animal (DOS SANTOS et al., 2021). Além disso, características como comprimento
+e densidade dos pelos modulam as trocas de calor com o ambiente, contribuindo
+para a eficiência da termorregulação e para a adaptação dos bovinos às condições
+tropicais.
+Apesar da relevância biológica dessas características, sua avaliação em
+condições de campo ainda é predominantemente baseada em classificações visuais
+ou escalas qualitativas subjetivas. Tais métodos estão sujeitos à percepção do
+avaliador e às variações de iluminação, o que compromete a repetibilidade e
+dificulta a comparação entre estudos. Para mitigar essa subjetividade, métodos
+
+instrumentais passaram a ser empregados para mensurar a cor de forma
+quantitativa e padronizada. A colorimetria instrumental consolidou-se como o
+método de referência (gold standard), utilizando o espaço CIELAB (L*, a* e b*)
+recomendado pela Commission Internationale de l'Éclairage (CIE) para representar
+numericamente a luminosidade e os componentes cromáticos (PHAN VAN SONG et
+al., 2025).
+Na medicina veterinária e zootecnia, a colorimetria tem sido aplicada com
+sucesso em diversas espécies. Em suínos, a técnica avalia a cor da carcaça e da
+gordura dorsal (WEI et al., 2021; WANG et al., 2022); em equinos, auxilia na
+caracterização fenotípica associada à genética da pelagem (DRUML et al., 2018;
+HOFMANOVÁ et al., 2019); e em aves, monitora a pigmentação da pele e da carne
+(TOMASEVIC et al., 2019). Especificamente em bovinos, estudos clássicos e
+recentes demonstram que animais de pelagem escura absorvem significativamente
+mais radiação solar e apresentam temperaturas superficiais mais elevadas que
+animais de pelagem clara (HILLMAN et al., 2001; GEBREMEDHIN et al., 2011).
+Entretanto, a utilização de colorímetros e espectrofotômetros convencionais
+em larga escala no campo enfrenta barreiras como o elevado custo, a necessidade
+de calibrações constantes e a baixa portabilidade. Essa realidade impulsionou a
+busca por alternativas baseadas em imagens digitais e visão computacional. O
+avanço das câmeras em smartphones e da inteligência artificial abriu novas
+perspectivas para a colorimetria digital (MENG et al., 2024). Contudo, um desafio
+técnico crítico reside na variabilidade da iluminação natural e nas diferenças entre
+sensores, que podem distorcer os dados cromáticos. Para superar essa limitação, o
+desenvolvimento de ferramentas digitais requer protocolos de calibração e
+algoritmos de correção que garantam a integridade das coordenadas CIELAB (YOO
+et al., 2023). Atualmente, tais aplicações ainda são escassas para a avaliação
+fenotípica de bovinos em condições reais de produção.
+Diante desse contexto, o objetivo deste estudo foi desenvolver e validar um
+aplicativo para smartphone capaz de caracterizar a cor da pele e do pelame de
+bovinos Nelore por meio da estimativa das coordenadas colorimétricas CIELAB.
+Referências (Normas ABNT)
+
+DA SILVA, R. G. Um modelo para a determinação do equilíbrio térmico de
+bovinos em ambientes tropicais. Revista Brasileira de Zootecnia, v. 29, n. 4, p.
+1244-1252, 2000. DOI: https://doi.org/10.1590/S1516-35982000000400039.
+DOS SANTOS, M. M. et al. An updated review on cattle thermoregulation:
+physiological responses, biophysical mechanisms, and heat stress alleviation
+pathways. Environmental Science and Pollution Research, v. 28, n. 24, p.
+30471-30485, 2021. DOI: https://doi.org/10.1007/S11356-021-14077-0.
+DRUML, T. et al. Discriminant analysis of colour measurements reveals allele
+dosage effect of ASIP/MC1R in bay horses. Czech Journal of Animal Science, v. 63,
+n. 8, p. 312-320, 2018. DOI: https://doi.org/10.17221/105/2017-CJAS.
+FERREIRA DOS SANTOS, W. et al. Estudo de viabilidade e análise de riscos
+na criação de gado de corte. Observatorio de la Economía Latinoamericana, v. 23,
+n. 10, 2025. DOI: https://doi.org/10.55905/oelv23n10-055.
+GEBREMEDHIN, K. G. et al. Body Temperature and Behavioral Activities of
+Four Breeds of Heifers in Shade and Full Sun. Applied Engineering in Agriculture, v.
+27, n. 6, p. 999-1006, 2011. DOI: https://doi.org/10.13031/2013.40620.
+HILLMAN, P. E. et al. Impact of Hair Color on Thermoregulation of Dairy Cows
+to Direct Sunlight. Transactions of the ASAE, v. 44, n. 5, p. 1141-1148, 2001. DOI:
+https://doi.org/10.13031/2013.23648.
+HOFMANOVÁ, B. et al. Estimation of genetic and non-genetic effects
+influencing coat colour in black horses. Czech Journal of Animal Science, v. 64, n. 1,
+p. 30-37, 2019. DOI: https://doi.org/10.17221/136/2018-CJAS.
+IDDY MUZZO, B.; RAMSEY, R. D.; VILLALBA, J. J. Changes in Climate and
+Their Implications for Cattle Nutrition and Management. Climate, v. 13, n. 1, p. 1,
+2024. DOI: https://doi.org/10.3390/cli13010001.
+MENG, R. et al. Smartphone-based colorimetric detection platform using color
+correction algorithms to reduce external interference. Spectrochimica Acta Part A, v.
+317, p. 124350, 2024. DOI: https://doi.org/10.1016/j.saa.2024.124350.
+MOLOSSI, L. et al. Agricultural Support and Public Policies Improving
+Sustainability in Brazil’s Beef Industry. Sustainability, v. 15, n. 6, p. 4801, 2023. DOI:
+https://doi.org/10.3390/su15064801.
+NORTH, M. A. et al. Global risk of heat stress to cattle from climate change.
+Environmental
+
+Research
+
+Letters,
+
+v.
+
+https://doi.org/10.1088/1748-9326/aceb79.
+
+18,
+
+n.
+
+9,
+
+p.
+
+094014,
+
+2023.
+
+DOI:
+
+PHAN VAN SONG, T. et al. A New Method for Skin Color Classification Based
+on Global CIELAB Data and k-Mean Clustering. Color Research and Application,
+2025. DOI: https://doi.org/10.1002/col.70012.
+THORNTON, P. K. et al. Increases in extreme heat stress in domesticated
+livestock species during the twenty-first century. Global Change Biology, v. 27, n. 22,
+p. 5762-5772, 2021. DOI: https://doi.org/10.1111/GCB.15825.
+TOMASEVIC, I. et al. Evaluation of poultry meat colour using computer vision
+system and colourimeter: Is there a difference? British Food Journal, v. 121, n. 6, p.
+1378-1387, 2019. DOI: https://doi.org/10.1108/BFJ-06-2018-0376.
+VILELA FERREIRA, G. C. et al. Distribución espacial y productiva de la
+ganadería bovina: el caso de Goiás – Brasil. Cuadernos de Geografía, v. 29, n. 2, p.
+484-501, 2020. DOI: https://doi.org/10.15446/rcdg.v29n2.79584.
+WANG, D. et al. Effects of dietary vitamin E and fat supplementation in
+growing-finishing swine... Journal of Animal Science, v. 100, n. 3, skac081, 2022.
+DOI: https://doi.org/10.1093/jas/skac081.
+WEI, X. et al. A Comparison of Fresh Pork Colour Measurements by Using
+Four Commercial Handheld Devices. Foods, v. 10, n. 11, p. 2515, 2021. DOI:
+https://doi.org/10.3390/FOODS10112515.
+YOO, W. S. et al. Image-Based Quantification of Color and Its Machine Vision
+and
+
+Offline
+
+Applications.
+
+Technologies, v. 11, n. 2, p. 49, 2023. DOI:
+
+https://doi.org/10.3390/technologies11020049.
+BARRETO, A. N. et al. Adaptive integumentary features of beef cattle raised
+on afforested or non-shaded tropical pastures. Scientific Reports, v. 14, n. 1, p.
+16675, 2024. DOI: https://doi.org/10.1038/s41598-024-66675-w.
+
+MATERIAL E MÉTODO
+Local e período experimental
+O estudo foi conduzido na Embrapa Gado de Corte, localizada no município
+de Campo Grande, Mato Grosso do Sul, Brasil (20°26'41,5'' S; 54°43'21,3'' W; 530
+m de altitude). A região está inserida no bioma Cerrado e apresenta clima tropical
+de savana (Aw), segundo a classificação de Köppen, caracterizado por uma estação
+seca, de maio a setembro, e uma estação chuvosa, de outubro a abril. As coletas de
+dados foram realizadas três vezes por ano, especificamente em dezembro, fevereiro
+e junho. Todos os procedimentos experimentais foram aprovados pelo Comitê de
+Ética no Uso de Animais (CEUA) da Embrapa Gado de Corte, sob o protocolo nº
+002/2022.
+Animais
+
+O estudo foi conduzido com 46 bovinos machos não castrados da raça
+Nelore, com idade média inicial de 12,87 ± 1,13 meses e peso corporal médio inicial
+de 301,21 ± 28,58 kg. Todos os animais receberam manejo sanitário padrão
+adotado pela Embrapa Gado de Corte, incluindo vacinação e vermifugação
+realizadas de acordo com os protocolos técnicos para a região e a categoria animal.
+Equipamentos
+Smartphone
+As imagens digitais foram adquiridas utilizando um smartphone Samsung
+Galaxy S25 (Samsung Electronics Co., Ltd., Suwon, Coreia do Sul), equipado com
+câmera traseira principal (Wide) de 50 MP, abertura f/1.8, sensor CMOS, sistema de
+foco automático por detecção de fase (PDAF) e estabilização óptica de imagem
+(OIS).
+Colorímetro
+As medições objetivas de cor foram feitas usando um colorímetro portátil
+Chroma Meter CR-400 (Konica Minolta Inc., Osaka, Japão). Esse instrumento foi
+desenvolvido para determinar de forma quantitativa a cor de superfícies analisando
+a luz refletida. É amplamente utilizado em pesquisas científicas e controle de
+qualidade devido à sua alta precisão, repetibilidade e capacidade de fornecer
+medições padronizadas, independentes da percepção visual do observador. O
+CR-400 tem uma área de medição de 8 mm e uma área de iluminação de 11 mm,
+realizando cada leitura em cerca de 1 segundo, apresentando alta repetibilidade
+(ΔE*ab ≤ 0,07) e baixa variabilidade entre instrumentos (ΔE*ab ≤ 0,6).
+O funcionamento do colorímetro baseia-se na medição da reflectância da luz
+incidente sobre a superfície avaliada. Para isso, o equipamento dispõe de um
+sistema óptico composto por uma lâmpada de xenônio pulsada, responsável por
+fornecer uma fonte de iluminação estável e uniforme, e por um conjunto de seis
+fotocélulas de silício, que detectam a intensidade da luz refletida pela amostra. A
+geometria óptica d/0° (iluminação difusa e observação a 0°, com componente
+especular incluída) minimiza os efeitos da textura superficial e do brilho da amostra,
+proporcionando medições consistentes e reprodutíveis em diferentes materiais.
+
+As medições foram realizadas no sistema internacional de cores CIELAB,
+utilizando o iluminante padrão D65, que representa as condições médias de
+iluminação natural (temperatura de cor aproximada de 6500 K) e o observador
+padrão CIE 1931 de 2°, adotado internacionalmente para representar a resposta
+visual humana em um campo de visão de dois graus. Nessas condições, o
+equipamento determina as coordenadas L* (luminosidade), a* (eixo cromático
+verde–vermelho) e b* (eixo cromático azul–amarelo), permitindo a representação
+numérica objetiva da cor da superfície analisada.
+Durante as avaliações, foram feitas três leituras consecutivas nas regiões de
+interesse, e foi calculada a média das coordenadas L*, a* e b* para representar a
+cor da pele e do pelame de cada animal. Os valores obtidos formaram o conjunto de
+dados de referência (Verdade fundamental) utilizado na construção do banco de
+dados.
+Protocolo de coleta e aquisição das imagens a Campo
+Preparo e contenção dos animais
+Para
+
+a
+
+realização
+
+das
+
+avaliações,
+
+os
+
+animais
+
+foram
+
+conduzidos
+
+individualmente ao tronco de contenção, onde permaneceram imobilizados durante
+os procedimentos de coleta. Todas as avaliações foram realizadas no lado esquerdo
+do animal, com o objetivo de padronizar as condições de amostragem.
+A
+
+área
+
+de
+
+amostragem
+
+foi
+
+definida na região dorsal do tronco,
+
+aproximadamente 20 cm abaixo da coluna vertebral. Inicialmente, delimitou-se uma
+área com pelame íntegro, previamente limpa para a remoção de sujidades
+superficiais, destinada à avaliação colorimétrica dos pelos. Em seguida, em uma
+área adjacente de aproximadamente 5 cm², realizou-se a tricotomia utilizando
+lâminas de bisturi descartáveis, expondo a superfície da pele para as avaliações
+colorimétricas e a aquisição de imagens.
+O procedimento foi realizado cuidadosamente para evitar lesões cutâneas
+que pudessem interferir nas medições de cor. A padronização da área de coleta e
+do preparo da amostra é fundamental para reduzir a influência de fatores externos
+nas medições colorimétricas e nas imagens utilizadas no desenvolvimento de
+modelos computacionais.
+
+Protocolo de Captura de Imagens
+Leituras Físicas de Referência
+Imediatamente após a contenção e o preparo do animal, realizaram-se as
+leituras físicas de cor com o colorímetro portátil Konica Minolta Chroma Meter
+CR-400. Para estabelecer o padrão de referência das coordenadas cromáticas no
+espaço CIELAB (L*a*b*), foram efetuadas três medições consecutivas em pontos
+distintos dentro da área tricotomizada da pele e outras três leituras na região
+adjacente de pelame íntegro. Os valores obtidos foram processados por meio da
+média aritmética simples para cada animal, minimizando as variações locais de
+pigmentação tecidual.
+Aquisição e pré-processamento das imagens
+Para padronizar a aquisição de imagens em campo e minimizar a influência
+da iluminação ambiente, foi desenvolvido um dispositivo portátil capaz de isolar a
+luz. O dispositivo foi confeccionado a partir de um tubo de policloreto de vinila
+(PVC), com 20 cm de comprimento e 30 cm de circunferência. Como o tubo
+apresentava coloração azul em sua superfície interna, esta foi revestida com tinta
+spray preta fosca para reduzir os reflexos internos. Durante a aquisição das
+imagens, a extremidade inferior do tubo era posicionada diretamente sobre a região
+de interesse, impedindo a incidência de luz externa e a formação de sombras.
+Na extremidade superior do tubo foi desenvolvido um adaptador para fixação
+do smartphone. O adaptador foi confeccionado a partir de uma placa plástica opaca
+da cor preta, com dimensões de 16,5 × 11,5 cm, acoplada a uma capa protetora do
+aparelho celular. O conjunto foi dimensionado para se encaixar sob pressão, na
+extremidade superior do tubo de PVC, reduzindo a entrada de luz pelas laterais e
+mantendo o smartphone alinhado durante todas as aquisições.
+Antes da aquisição das imagens, foi fixada uma etiqueta de identificação ao
+lado das áreas avaliadas, contendo o número de registro do animal. Esse
+procedimento permitiu relacionar cada fotografia ao respectivo animal e aos valores
+colorimétricos
+
+obtidos
+
+pelo
+
+colorímetro,
+
+garantindo
+
+a
+
+rastreabilidade
+
+das
+
+informações e a correta organização do banco de dados.
+Após a realização das leituras colorimétricas, o dispositivo era posicionado
+sobre a área de amostragem para a aquisição de imagens digitais. As fotografias
+
+foram obtidas utilizando um smartphone Samsung Galaxy S25 (Samsung
+Electronics Co., Ltd., Suwon, Coreia do Sul), no modo manual (Pró) da câmera.
+Durante toda a aquisição, os parâmetros de captura foram mantidos constantes,
+com zoom de 2,5× e o flash da câmera permanentemente ativado, garantindo
+condições uniformes de iluminação e a padronização das imagens.
+As imagens digitais foram submetidas a uma etapa de pré-processamento
+com o objetivo de reduzir a influência das variações de iluminação e padronizar as
+informações utilizadas pelos modelos de inteligência artificial.
+Inicialmente, foi aplicada a correção cromática pelo algoritmo Gray World,
+uma técnica de balanço de branco que pressupõe que, em imagens com
+distribuição cromática suficientemente diversificada, a média dos canais vermelho
+(R), verde (G) e azul (B) tende a um tom de cinza neutro. A correção foi realizada
+conforme a Equação 1.
+𝐼𝑜𝑢𝑡(𝑐) = 𝐼𝑖𝑛(𝑐)×
+
+𝑎𝑣𝑔𝑔𝑙𝑜𝑏𝑎𝑙
+𝑎𝑣𝑔𝑐
+
+em que 𝑐∈{𝑅, 𝐺, 𝐵}, 𝑎𝑣𝑔𝑐representa a média do canal 𝑐e 𝑎𝑣𝑔𝑔𝑙𝑜𝑏𝑎𝑙corresponde
+à média das intensidades dos três canais. Esse procedimento reduz as diferenças
+cromáticas decorrentes das condições de iluminação na aquisição das imagens.
+Após a normalização das cores, realizou-se a segmentação da região de
+interesse (ROI), correspondente à pele ou ao pelame. O processo de segmentação
+foi composto por três etapas sucessivas:
+●​
+
+Aplicação de filtro Gaussiano para redução de ruídos e suavização da
+
+imagem;
+●​
+
+Limiarização adaptativa para separação entre objeto e fundo, permitindo
+
+melhor desempenho em imagens com iluminação não uniforme;
+●​
+
+Operação
+
+morfológica
+
+de
+
+fechamento
+
+para
+
+eliminar
+
+pequenas
+
+descontinuidades e preservar a integridade da máscara segmentada.
+Após a segmentação, a região de interesse foi dividida em uma malha regular
+de 3 × 3, resultando em nove sub-regiões independentes. Essa estratégia permitiu
+representar a distribuição espacial da informação cromática, reduzindo a influência
+de variações locais na superfície analisada.
+Em cada uma das nove células foram extraídas características provenientes
+de três espaços de cor:
+
+●​
+
+RGB, representando diretamente as intensidades registradas pelo sensor da
+
+câmera;
+●​
+
+HSV, que separa as informações de matiz (Hue), saturação (Saturation) e
+
+brilho (Value), tornando a representação menos sensível às variações de
+iluminação;
+●​
+
+CIELAB, utilizado por apresentar melhor correspondência com a percepção
+
+visual humana e por permitir comparação direta com os valores obtidos pelo
+colorímetro.
+Para cada canal, dos três espaços de cor foram calculadas as médias
+aritméticas em cada uma das nove sub-regiões, formando o vetor de características
+utilizado como entrada dos modelos de inteligência artificial.
+Além das componentes cromáticas, foram incluídos atributos derivados com o
+objetivo de aumentar a correlação entre as características extraídas das imagens e
+os valores de referência obtidos pelo colorímetro. Foram utilizadas as razões
+cromáticas R/G, R/B e G/B; a diferença de luminosidade ΔL* é igual a L*c v2 − L*,
+calculada entre os espaços CIELAB e HSV; e a intensidade total da amostra, obtida
+pela soma dos canais R + G + B.
+
+Modelagem Preditiva
+Após a etapa de pré-processamento e extração de atributos, foi desenvolvido
+um sistema de regressão para estimar as coordenadas colorimétricas L*a*b* a partir
+das características extraídas de imagens digitais.
+Embora pele e pelame pertençam ao mesmo animal, esses tecidos
+apresentam propriedades ópticas distintas. A pele caracteriza-se por maior
+absorção e espalhamento subsuperficial da luz, enquanto o pelame apresenta
+comportamento óptico influenciado pela orientação das fibras, pela reflexão
+especular e pelo sombreamento entre os pelos. Como consequência, a resposta
+espectral observada pela câmera difere entre essas duas superfícies, mesmo sob
+condições padronizadas de aquisição, o que pode comprometer o desempenho de
+um único modelo preditivo.
+Dessa
+
+forma,
+
+optou-se
+
+por
+
+uma
+
+estratégia
+
+baseada
+
+em
+
+modelos
+
+especialistas, na qual foram desenvolvidos dois modelos independentes de
+regressão: Modelo para pele, treinado exclusivamente com amostras provenientes
+
+da superfície cutânea; e Modelo para pelame, treinado com apenas amostras da
+superfície pilosa. Essa abordagem permite que cada modelo aprenda os padrões
+específicos de sua respectiva superfície, reduzindo a influência da heterogeneidade
+óptica entre pele e pelame e aumentando a capacidade de generalização das
+estimativas.
+Os modelos foram implementados utilizando o algoritmo Random Forest
+Regressor (Floresta Aleatória), composto por um conjunto de 200 árvores de
+decisão. O Random Forest foi escolhido por sua elevada capacidade de modelar
+relações
+
+não
+
+lineares
+
+entre
+
+variáveis,
+
+sua
+
+robustez
+
+frente
+
+a
+
+atributos
+
+correlacionados e dados heterogêneos, além de apresentar boa capacidade de
+generalização em problemas de regressão com múltiplos preditores. O algoritmo
+utiliza o princípio de agregação (bagging), no qual múltiplas árvores são treinadas a
+partir de subconjuntos aleatórios dos dados e das variáveis preditoras, e a
+estimativa final é obtida pela média das predições individuais das árvores. Essa
+estratégia reduz a variância do modelo e aumenta sua estabilidade preditiva.
+Desenvolvimento do Aplicativo Android
+Para viabilizar a aplicação prática do sistema em condições de campo,
+desenvolveu-se um aplicativo móvel compatível com o Android. A ferramenta foi
+projetada para integrar o pipeline de visão computacional e os modelos preditivos
+especialistas baseados em Random Forest. O aplicativo gerencia a câmara do
+smartphone para permitir a captura padronizada de imagens através do dispositivo
+de isolamento luminoso , extrai as coordenadas cromáticas das sub-regiões da área
+de interesse e executa o modelo correspondente (pele ou pelame) para fornecer a
+estimativa de cor em tempo real na interface do utilizador.
+
+Estatística e Métricas de Avaliação
+Para quantificar o desempenho dos modelos especialistas na estimativa das
+coordenadas cromáticas, adotaram-se métricas que avaliam tanto o erro absoluto
+quanto a capacidade explicativa da regressão.
+Erro Médio Absoluto (MAE)
+
+O Erro Médio Absoluto (MAE) foi utilizado para medir a precisão em cada
+*
+
+(
+
+*
+
+*
+
+)
+
+canal individual 𝐿 , 𝑎 , 𝑏 . Por ser expresso na mesma unidade da variável original,
+o MAE facilita a interpretação direta do erro e a comparação com a resolução do
+colorímetro de referência. O MAE é definido pela Equação 2:
+𝑀𝐴𝐸 =
+
+1
+𝑛
+
+𝑛
+
+∑ |𝑦𝑖 − 𝑦ˆ𝑖|
+
+(𝐸𝑞𝑢𝑎çã𝑜 2)
+
+𝑖=1
+
+​
+Em que 𝑦𝑖 representa o valor real medido pelo colorímetro e 𝑦ˆ𝑖 o valor predito pelo
+modelo para a 𝑖-ésima amostra.
+
+2
+
+Coeficiente de Determinação (𝑅 )
+Para avaliar o ajuste global do modelo, foi empregado o Coeficiente de
+2
+
+Determinação (𝑅 ). Essa métrica expressa a proporção da variância dos dados
+explicada pelos preditores, conforme a Equação 3:
+𝑛
+
+2
+
+𝑅 = 1−
+
+(
+𝑖=1
+
+)2
+
+𝑛
+
+2
+
+∑ 𝑦𝑖−𝑦ˆ𝑖
+
+(𝐸𝑞𝑢𝑎çã𝑜 3)
+
+( )
+
+∑ 𝑦𝑖−𝑦
+
+𝑖=1
+
+​
+2
+
+Diferentemente do MAE, o 𝑅 permite verificar se a separação entre os especialistas
+em pele e pelo contribuiu de fato para capturar os padrões subjacentes das
+amostras.
+Diferença de Cor (∆𝐸)
+Embora o MAE avalie cada canal separadamente, a diferença perceptual
+*
+
+entre cores é comumente resumida por ∆𝐸𝑎𝑏, calculado no espaço CIELAB segundo
+a formulação CIE76. Essa métrica reúne as diferenças de luminosidade e
+cromaticidade em um único escalar, permitindo comparar o desempenho do sistema
+com critérios de percepção visual. A distância é calculada pela Equação 4:
+
+*
+
+∆𝐸𝑎𝑏 =
+
+(
+
+*
+
+*
+
+2
+
+) (
+
+𝐿2 − 𝐿1
+
+*
+
+*
+
+2
+
+) (
+
++ 𝑎2 − 𝑎1
+
+*
+
+*
+
+)
+
++ 𝑏2 − 𝑏1
+
+2
+
+(𝐸𝑞𝑢𝑎çã𝑜 4)
+
+Raiz do Erro Quadrático Médio (RMSE)
+Complementando o MAE, a Raiz do Erro Quadrático Médio (RMSE) foi
+empregada para medir a acurácia global do modelo. Por elevar as diferenças ao
+quadrado antes de extrair a média, o RMSE penaliza de forma mais severa os erros
+de maior magnitude (outliers), sendo definido pela Equação 5:
+1
+𝑛
+
+𝑅𝑀𝑆𝐸 =
+
+𝑛
+
+)2
+
+(
+𝑖=1
+
+∑ 𝑦𝑖 − 𝑦ˆ𝑖
+
+(𝐸𝑞𝑢𝑎çã𝑜 5)
+
+Coeficiente de Correlação (𝑟)
+Para quantificar a força e a direção da associação linear entre os valores
+reais do colorímetro (𝑦) e os valores preditos pelo modelo computacional (𝑦ˆ),
+utilizou-se o Coeficiente de Correlação de Pearson, definido pela Equação 6:
+𝑛
+
+𝑟=
+
+( )(
+
+)
+
+∑ 𝑦𝑖−𝑦 𝑦ˆ𝑖−𝑦ˆ
+
+𝑖=1
+𝑛
+
+2 𝑛
+
+(𝐸𝑞𝑢𝑎çã𝑜 6)
+2
+
+( ) ∑ (𝑦ˆ −𝑦ˆ)
+
+∑ 𝑦𝑖−𝑦
+
+𝑖=1
+
+𝑖=1
+
+𝑖
+
+​
+Onde 𝑦 é a média dos valores reais e 𝑦ˆ é a média dos valores preditos.
+
+Estatística Descritiva
+Para caracterizar a distribuição e a variabilidade das coordenadas cromáticas
+reais (L*, a*, b*) no conjunto de dados, utilizou-se a estatística descritiva. Foram
+calculadas as medidas de tendência central (média) e de dispersão (desvio padrão
+e amplitude), o que permite compreender o perfil espectral inicial e a dispersão das
+amostras de pele e de pelame de bovinos.
+
+Análise de Bland–Altman
+Diferentemente da correlação (que mede a associação linear, mas não a
+concordância exata), a análise de Bland-Altman foi adotada para avaliar o grau de
+concordância entre o colorímetro físico e o modelo computacional. Esse método
+quantifica o viés médio (diferença sistemática entre as técnicas) e estabelece os
+
+Limites de Concordância de 95% (definidos como o viés médio ± 1,96 vezes o
+desvio padrão das diferenças).
+
+RESULTADOS
+
+DISCUSSÃO
+
+CONCLUSÕES
+
+
